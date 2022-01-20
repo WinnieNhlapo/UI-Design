@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!--  -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+
+<!--  -->
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Melody</title>
+    <title>Music Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 <body>
   
-    <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Our Melody</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
+    
+      
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Music</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Details</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+          
         </div>
       </nav>
-
       <!--Jumbotron-->
 
       <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
+        <h1 class="display-4">Music for your Soul!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -54,7 +64,7 @@
 
       <!--container-->
 
-      <div class="container-fluid mt-3 ">
+      <div class="container-fluid mt-3 bg-secondary ">
         
         <div class="row">
             <!--NAVRBAR CLASS-->
@@ -62,7 +72,11 @@
             <nav class="navbar navbar-light bg-dark">
                 <form class="form-inline">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg> Search
+                  </button>
                 </form>
               </nav>
               <br>
@@ -77,11 +91,12 @@
                     <!--cards-->
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <img class="img-fluid"src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F6%252F2016%252F04%252Fdrake.jpg&q=85" class="card-img-top" alt="...">
+                          <h5 class="card-title">VIEWS</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Drake</h6>
+                          <p class="card-text">Views is the fourth studio album by Canadian rapper  Drake. </p>
+                          <a href="#" class="card-link">Release Date</a>
+                          <a href="#" class="card-link">April 29, 2016</a>
                         </div>
                       </div>
                 </div>
@@ -89,11 +104,12 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <img class="img-fluid" src="https://assets.audiomack.com/ourmelody/861888bae7c405e3780a211de828c00e7baeeb5bf085850d69eac4a4865e0538.jpeg?width=250&height=265&max=true " alt="...">
+                          <h5 class="card-title">JIKELELE</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Our Melody</h6>
+                          <p class="card-text">Our Melody, Music for your Soul.</p>
+                          <a href="#" class="card-link">Release Date</a>
+                          <a href="#" class="card-link">March 12 2021</a>
                         </div>
                       </div>
                 </div>
@@ -102,11 +118,13 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+
+                          <img class="img-fluid" src="https://live.staticflickr.com/7061/6828895138_6509c7b67e_n.jpg" alt="...">
+                          <h5 class="card-title">FORTUNE</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Chris Brown</h6>
+                          <p class="card-text">Fortune is the fifth studio album by American singer Chris Brown.</p>
+                          <a href="#" class="card-link">Release Date</a>
+                          <a href="#" class="card-link">July 3 2012</a>
                         </div>
                       </div>
                 </div>
@@ -123,9 +141,11 @@
                     <!--cards-->
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                          <img class="img-fluid" src="http://3.bp.blogspot.com/_k1mmOxLHbwE/TR-a8xEah8I/AAAAAAAABUc/cX4ucBjE9uE/w1200-h630-p-k-no-nu/human%2Bunreleased.jpg" alt="...">
+                          <h5 class="card-title">HUMAN</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Brandy Norwood</h6>
+                          <p class="card-text">Human is the fifth studio album by American singer Brandy.</p>
                           <a href="#" class="card-link">Card link</a>
                           <a href="#" class="card-link">Another link</a>
                         </div>
@@ -138,8 +158,8 @@
                           <h5 class="card-title">Card title</h5>
                           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="#" class="card-link">Release Date</a>
+                          <a href="#" class="card-link">December 5 2008</a>
                         </div>
                       </div>
                 </div>
@@ -148,11 +168,12 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <img class="img-fluid" src="https://live.staticflickr.com/8105/8603492400_9c1f9052ae_z.jpg" alt="...">
+                          <h5 class="card-title">DANGEROUSLY IN LOVE </h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Beyonce</h6>
+                          <p class="card-text">Dangerously in Love is the debut solo studio album by American singer Beyoncé.</p>
+                          <a href="#" class="card-link">Release Date</a>
+                          <a href="#" class="card-link">June 20, 2003,</a>
                         </div>
                       </div>
                 </div>
@@ -167,5 +188,10 @@
 
       <div class="card-footer text-center text-white bg-secondary mt-3">footer</div>
 
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
